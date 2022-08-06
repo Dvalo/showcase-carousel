@@ -1,0 +1,109 @@
+.text-carousel {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.text-carousel.js-is-disabled {
+  pointer-events: none;
+}
+
+.text-carousel .swiper {
+  height: 100%;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+
+  @include bp-up(md) {
+    transition: all 0.8s;
+    transition-delay: 0.8s;
+  }
+}
+
+.text-carousel.js-is-disabled .swiper {
+  transform: translateY(30%);
+  opacity: 0.005;
+  transition-delay: unset;
+}
+
+.text-carousel .swiper-wrapper {
+  align-items: center;
+}
+
+.text-carousel .swiper-slide {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 43px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  @include bp-up(lg) {
+    margin-left: 70px;
+
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+}
+
+.text-carousel .swiper-slide:hover .text-carousel__slide,
+.text-carousel .swiper-slide.js-is-active .text-carousel__slide {
+  background-size: 100%;
+
+  &::before {
+    opacity: 0.35;
+  }
+}
+
+.text-carousel .text-carousel__slide {
+  @include text-stroke;
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: $font-family-raleway;
+  letter-spacing: 4px;
+  background-image: linear-gradient(45deg, $c-white, $c-white);
+  background-repeat: no-repeat;
+  background-size: 0%;
+  background-clip: text;
+  transition: all 0.8s cubic-bezier(0.2, 1, 0.25, 1.04);
+
+  @include bp-up(sm) {
+    font-size: 40px;
+    letter-spacing: 6px;
+  }
+
+  @include bp-up(md) {
+    font-size: 50px;
+    letter-spacing: 8px;
+  }
+
+  @include bp-up(lg) {
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: 15px;
+  }
+
+  &::before {
+    @include text-stroke(transparent, 0, $c-white);
+    position: absolute;
+    top: -10px;
+    left: -25px;
+    font-size: 12px;
+    font-family: $font-family-titilium;
+    letter-spacing: 3px;
+    transition: opacity 0.5s;
+    content: attr(data-index);
+
+    @include bp-up(md) {
+      top: -18px;
+      left: -30px;
+      font-size: 20px;
+    }
+  }
+}

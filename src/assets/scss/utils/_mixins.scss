@@ -1,0 +1,29 @@
+@mixin button-reset {
+  padding: 0;
+  background: 0;
+  border: unset;
+  cursor: pointer;
+}
+
+@mixin text-stroke(
+  $stroke-color: $c-white,
+  $stroke-width: 2px,
+  $fill-color: transparent
+) {
+  -text-fill-color: $fill-color;
+  -moz-text-stroke-color: $stroke-color;
+  -moz-text-stroke-width: $stroke-width;
+  -webkit-text-fill-color: $fill-color;
+  -webkit-text-stroke-color: $stroke-color;
+  -webkit-text-stroke-width: $stroke-width;
+}
+
+@mixin bp-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Couldn't find breakpoint: `#{$breakpoint}`. ";
+  }
+}
