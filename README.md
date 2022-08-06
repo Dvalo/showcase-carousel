@@ -1,3 +1,24 @@
+## Getting Started
+
+- Clone the `showcase-carousel` repository.
+- Run `npm install` to install the dependencies.
+- Run `gulp` to run the local server.
+
+Open [https://localhost:3000](https://localhost:3000) within your browser.
+
+## Preview
+
+##### Live Preview Link
+[https://dvalo.github.io/showcase-carousel/](https://dvalo.github.io/showcase-carousel/)
+
+##### Text Carousel
+
+![Text Carousel](https://i.imgur.com/gnTHUhr.gif)
+
+##### Expanded Slide
+
+![Expanded Slide](https://i.imgur.com/yMFklaI.gif)
+
 # Gulp Starter Kit
 [![npm](https://img.shields.io/npm/v/@jr-cologne/create-gulp-starter-kit.svg)](https://www.npmjs.com/package/@jr-cologne/create-gulp-starter-kit)
 
