@@ -13,11 +13,11 @@ Open [https://localhost:3000](https://localhost:3000) within your browser.
 
 ##### Text Carousel
 
-![Text Carousel](https://i.imgur.com/gnTHUhr.gif)
+![Text Carousel](https://github.com/Dvalo/showcase-carousel/blob/main/preview/text-carousel.gif?raw=true)
 
 ##### Expanded Slide
 
-![Expanded Slide](https://i.imgur.com/yMFklaI.gif)
+![Expanded Slide](https://github.com/Dvalo/showcase-carousel/blob/main/preview/expanded-slide.gif?raw=true)
 
 # Gulp Starter Kit
 [![npm](https://img.shields.io/npm/v/@jr-cologne/create-gulp-starter-kit.svg)](https://www.npmjs.com/package/@jr-cologne/create-gulp-starter-kit)
