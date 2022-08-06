@@ -138,10 +138,11 @@ window.addEventListener("load", () => {
 
   // Cursor functionality
   const hoverCursor = document.querySelector(".custom-cursor");
+  let scaleTween;
 
   const mouseOver = () => {
     hoverCursor.classList.add(componentClasses.active);
-    gsap.fromTo(
+    scaleTween = gsap.fromTo(
       hoverCursor,
       { scale: 1 },
       {
@@ -152,10 +153,11 @@ window.addEventListener("load", () => {
   };
 
   const mouseOut = () => {
+    scaleTween.pause();
     hoverCursor.classList.remove(componentClasses.active);
     gsap.to(hoverCursor, {
       scale: 1,
-      duration: 0.4,
+      duration: 0.3,
     });
   };
 
