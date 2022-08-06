@@ -39,6 +39,10 @@ const gulp = require("gulp"),
 
 gulp.task("clear", () => del([dist_folder]));
 
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(deploy());
+});
+
 gulp.task("html", () => {
   return gulp
     .src([src_folder + "**/*.html"], {
