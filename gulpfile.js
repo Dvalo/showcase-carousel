@@ -18,6 +18,7 @@
  */
 
 const gulp = require("gulp"),
+  deploy = require("gulp-gh-pages"),
   del = require("del"),
   sourcemaps = require("gulp-sourcemaps"),
   plumber = require("gulp-plumber"),
