@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Showcase Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="custom-cursor"></div>
+      <!-- Image/Video showcase -->
+      <article class="image-showcase">
+        <button class="image-showcase__close"></button>
+        <div class="image-showcase__wrapper">
+          <div class="image-showcase__item" data-index="1">
+            <figure>
+              <img src="/assets/images/balloons.jpg" alt="" class="image" />
+            </figure>
+            <div class="image-showcase__description">
+              <div class="image-showcase__text">
+                <span>Lorem ipsum dolor sit amet!</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Consectetur adipiscing elit</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Nulla sit amet molestie ante</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Nulla sit amet molestie ante</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-showcase__item" data-index="2">
+            <figure>
+              <img src="/assets/images/tower.jpg" alt="" class="image" />
+            </figure>
+            <div class="image-showcase__description">
+              <div class="image-showcase__text">
+                <span>Duis viverra diam sit amet!</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Duis auctor nulla sit amet arcu</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Phasellus dolor erat, sollicitudin.</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-showcase__item" data-index="3">
+            <figure class="is-video">
+              <video loop muted>
+                <source src="/assets/videos/traffic.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+            <div class="image-showcase__description">
+              <div class="image-showcase__text">
+                <span>Lorem ipsum dolor sit amet!</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Consectetur adipiscing elit</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Nulla sit amet molestie ante</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Consectetur adipiscing elit</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Nulla sit amet molestie ante</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-showcase__item" data-index="4">
+            <figure>
+              <img src="/assets/images/ocean.jpg" alt="" class="image" />
+            </figure>
+            <div class="image-showcase__description">
+              <div class="image-showcase__text">
+                <span>Duis viverra diam sit amet!</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Duis auctor nulla sit amet arcu</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Phasellus dolor erat, sollicitudin.</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-showcase__item" data-index="5">
+            <figure class="is-video">
+              <video loop muted>
+                <source src="/assets/videos/surfing.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+            <div class="image-showcase__description">
+              <div class="image-showcase__text">
+                <span>Duis viverra diam sit amet!</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Duis auctor nulla sit amet arcu</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Phasellus dolor erat, sollicitudin.</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-showcase__item" data-index="6">
+            <figure>
+              <img src="/assets/images/mountains.jpg" alt="" class="image" />
+            </figure>
+            <div class="image-showcase__description">
+              <div class="image-showcase__text">
+                <span>Lorem ipsum dolor sit amet!</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Consectetur adipiscing elit</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Nulla sit amet molestie ante</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-showcase__item" data-index="7">
+            <figure>
+              <img src="/assets/images/well.jpg" alt="" class="image" />
+            </figure>
+            <div class="image-showcase__description">
+              <div class="image-showcase__text">
+                <span>Duis viverra diam sit amet!</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Duis auctor nulla sit amet arcu</span>
+              </div>
+              <div class="image-showcase__text">
+                <span>Phasellus dolor erat, sollicitudin.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Text Carousel -->
+      <article class="text-carousel">
+        <div class="swiper text-carousel__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-index="1">
+              <div class="text-carousel__slide" data-index="01">
+                Retail Spaces
+              </div>
+            </div>
+            <div class="swiper-slide" data-index="2">
+              <div class="text-carousel__slide" data-index="02">
+                Office Spaces
+              </div>
+            </div>
+            <div class="swiper-slide" data-index="3">
+              <div class="text-carousel__slide" data-index="03">
+                Residental Spaces
+              </div>
+            </div>
+            <div class="swiper-slide" data-index="4">
+              <div class="text-carousel__slide" data-index="04">
+                Public Spaces
+              </div>
+            </div>
+            <div class="swiper-slide" data-index="5">
+              <div class="text-carousel__slide" data-index="05">
+                Private Spaces
+              </div>
+            </div>
+            <div class="swiper-slide" data-index="6">
+              <div class="text-carousel__slide" data-index="06">
+                Private Parking
+              </div>
+            </div>
+            <div class="swiper-slide" data-index="7">
+              <div class="text-carousel__slide" data-index="07">
+                Public Parking
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script async src="/assets/js/all.js"></script>
+  </body>
+</html>
